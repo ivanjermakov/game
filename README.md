@@ -1,4 +1,4 @@
-# game
+# play
 
 A universal game launcher for Linux.
 
