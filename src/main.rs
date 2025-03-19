@@ -134,6 +134,7 @@ impl Executor for SteamLauncher {
             Some(game) => {
                 let mut command = Command::new("steam");
                 command.args([format!("steam://rungameid/{}", game.app_id)]);
+                println!("spawning {command:?}");
                 command.spawn()?;
                 Ok(RunStatus::Ok)
             }
